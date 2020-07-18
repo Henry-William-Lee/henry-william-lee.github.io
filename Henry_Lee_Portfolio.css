@@ -1,0 +1,251 @@
+/* Body */
+
+body{
+    margin: 0%;
+}
+
+/*Navivigation Bar*/
+
+.Navbar{
+    overflow: hidden;
+    background-color:chocolate;
+    position: fixed;
+    top: 0px;
+    width:26%;
+    z-index: 1;
+}
+/*End Nav Bar*/
+
+/*Navbar Text*/
+
+.Navbar a {
+    float:left;
+    display:block;
+    color:whitesmoke;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    text-align: center;
+}
+
+/*End Navbar Text*/
+
+/*Navbar Hover effect*/
+
+.Navbar a:hover{
+    background-color:whitesmoke ;
+    color:chocolate;
+}
+
+/*End Hover Effect*/
+
+/*Navbar Home Button*/
+
+.Navbar a.active{
+    background-color: thistle;
+    color:chocolate
+}
+
+/*end navbar home button*/
+
+/*video*/
+
+#Typing_Video{
+    position: fixed;
+    right:0;
+    bottom:0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+.Video_Text{
+    background: burlywood;
+    color:whitesmoke;
+    width: 100%;
+    padding:17px;
+    margin-top: 23%;
+}
+
+/*table - this covers the columns and rows of the table*/
+
+*{
+    box-sizing: border-box;
+}
+
+.Column_1{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top:3%;
+    height: 420px;
+    background-color:burlywood;
+    color:chocolate;
+}
+
+.Column_2{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 420px;
+    background-color: thistle;
+
+}
+
+
+.Column_3{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3.5%;
+    height:420px;
+    background-color: thistle;
+}
+
+.Row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+/*end heading*/
+
+h1{
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%;
+    color:whitesmoke;
+}
+
+p{
+    font-family: monospace,Perpetua, Rockwell Extra Bold;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*all center elements*/
+center{
+
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: center;
+    letter-spacing : 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+/*Anchor elements*/
+
+a{
+    color:whitesmoke;
+}
+
+
+/*end anchor elements*/
+
+/*Quotation Elements*/
+q{
+
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+/*end quotation elements*/
+
+/*image elements*/
+
+img{
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height:340px;
+    margin-right:auto ;
+    margin-left: auto ;
+    display: block;   
+}
+
+/*end image*/
+
+/*contact form*/
+input[type=text] {
+    width:100%;
+    padding: 12px;
+    border:1px;
+    border-style: solid;
+    border-color: chocolate;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/*submit button*/
+
+input[type=submit]{
+    background-color:chocolate;
+    color:white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius:4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+input [type=submit]:hover {
+    background-color: white;
+    color:chocolate;
+    font-weight: bold;
+    transform: scale(1.5);
+    transition:transform 1.5s;
+}
+
+/* Form element*/
+
+form{
+
+    border-radius: 6px;
+    background-color:thistle;
+    padding:10px;
+    font-family: "Trebuchet MS", Optima;
+    height:300px;
+}
+
+center:hover{
+    transition:transform 2s;
+    transform:scale(1.12)
+
+}
+
+p:hover{
+    color:chocolate;
+    transition:transform 1s;
+    transform: scale(1.09);
+}
+
+h1:hover{
+    color:chocolate;
+    font-weight: normal;
+}
+
+img:hover{
+    filter:grayscale(5%);
+    transition:transform 1s;
+    transform: scale(1.1);
+}
+
+footer{
+    padding: 2%;
+    background-color: burlywood;
+}
