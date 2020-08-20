@@ -20,10 +20,10 @@
     <!--Navigation Bar-->
 
     <div class="Navbar">
-        <a class="active" href="#Title">Title</a>
+        <a class="active" href="#Home">Home</a>
         <a href="#This is me"> About Me</a>
         <a href="#Github">Github</a>
-        <a href="#Contact">Where to find me</a>
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
     </div>
     <!--End Nav Bar-->
 
@@ -34,19 +34,20 @@
     <!--Adds Space-->
 
     <!--End Title-->
-
-
-    <!--Video-->
-    <div id="Title">
+<!--Home-->
+    <div id="Home"></div>
+        <br>
+        <br>
+        <!--Video-->
         <video autoplay muted loop id="Typing_Video">
             <source src="./Img/tech_data.mp4" type="video/mp4">
-             </video>
+         </video>
     </div>
 <!--End Video-->
 
 <!--Video Text-->
 
-    <div class= "Video_Text">
+    <div class="Video_Text">
            <h1 style="color:whitesmoke;"> Henry's Portfolio</h1>
         <p>
            <strong>
@@ -66,6 +67,41 @@
     </div>
 
     <!--End Video Section-->
+
+<!--slideshow section-->
+
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">1/3</div>
+                        <img class="Slide_Show_Images" src="./Img/fa.png" style="width: 100%;">
+                        <div class="text">I'm here to assist you!</div>
+                    </div>    
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">2/3</div>
+                        <img class="Slide_Show_Images" src="./Img/sh.png" style="width: 100%;">
+                        <div class="text">My number one priorty is making your dream come true!</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">3/3</div>
+                        <img class="Slide_Show_Images" src="./Img/mp.png" style="width: 100%;">
+                        <div class="text">I'm familiar with many computer languages!</div>
+                    </div>
+
+            </div>
+            <a class="Previous" onclick="plusSlides(-1)">&#10094</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <br>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        
+    </div>
 
     <!--About Me Section-->
     <div class="Row" id= "This is me">
@@ -87,7 +123,7 @@
 <!--End of About Me Section-->
 
 <!--Github Section-->
-<div class= "Row" id="Github">
+<div class="Row" id="Github">
     <div class="Column_1">
         <h1>Github</h1> 
         <p>You can view all of my coding projects here on my Github profile:<br>
@@ -104,25 +140,28 @@
 
 <!--Contact Section-->
 
-<div class="Row" id="Contact">
-    <div class="Column_3">
-        <img src=".\Img\mail.png" alt="contact image">
-    </div>
-
-    <div class="Column_1"> <!-- Contact form, on the right column-->
-      <h1>Contact</h1>
-      <form action="" method= "get">
-          <label>Name:</label>
-                <input type="text" placeholder="Enter Your Name Here"><br><br>
-        <label>Email:</label>
-            <input type="text" id="email" name="Email" placeholder="Enter Your Email Here"><br><br>
-        <label>Message:</label>
-            <input type="text" id="Message" name="Message" placeholder="Type Your Message Here"><br>
-            <br>
+<div id="Contact">
+    
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+    <div class="form-popup" id="myForm">
+        <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+            <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on
+             the internet, you have to push it to your online website first -->
+            <h1>Contact</h1>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Type your name here" name="name" required>
+            <label for="phone"><b>Phone</b></label>
+            <input type="text" placeholder="Enter your phone number here" name="phone">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Type your email address here" name="email" required>
+            <label for="message"><b>Message</b></label>
+            <input type="text" placeholder="Type your message here" name="message">
             <!--Submit Button-->
-        <input type="submit" value="Submit">
-        <!--End Submit Button-->
-      </form> 
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+             <!--End Submit Button-->
+        </form> 
+
     </div>
 </div>
 <!--End Form-->
@@ -135,6 +174,7 @@
             </p>    
         </footer>
 <!--End Footer-->
+<script src="Portfolio.js"></script>
 </body>
 <!--End Webpage-->
 </html>
