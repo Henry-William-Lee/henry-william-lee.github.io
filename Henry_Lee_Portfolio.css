@@ -62,7 +62,7 @@ body.fade-out {
 
 /* Navbar hover effect */
 .Navbar a:hover {
-	background-color: #F4F4F4; /*  This defines the background color that will display when you hover over the text on the navbar */
+	background-color: #a8a800; /*  This defines the background color that will display when you hover over the text on the navbar */
 	color: black; /* This defines the font color that will display when you hover over the text on the navbar */
 	font-weight: bold; /* This makes the text on the navbar bold when hovered over */
 	cursor: pointer;
@@ -96,8 +96,8 @@ body.fade-out {
 }
 
 .Video_Text{
-    background: burlywood;
-    color:whitesmoke;
+    background: #a8a800;
+    color:w#00adad;
     width: 100%;
     padding:17px;
     margin-top: 23%;
@@ -235,8 +235,8 @@ body.fade-out {
     padding: 10px;
     padding-top:3%;
     height: 420px;
-    background-color:burlywood;
-    color:chocolate;
+    background-color:#a8a800;
+    color:#00adad;
 }
 
 .Column_2{
@@ -245,7 +245,7 @@ body.fade-out {
     padding: 10px;
     padding-top: 1.9%;
     height: 420px;
-    background-color: thistle;
+    background-color: #a8a800;
 
 }
 
@@ -457,7 +457,7 @@ button:hover, .form-container .btn:hover{
 }
 .form-container .cancel:hover{
   color: white;
-  background-color: darkred;
+  background-color: black;
   -webkit-transition-duration: 1s; 
   transition-duration: 1s;
   border-style: solid;
@@ -474,13 +474,13 @@ center:hover{
 }
 
 p:hover{
-    color:chocolate;
+    color:black;
     transition:transform 1s;
     transform: scale(1.09);
 }
 
 h1:hover{
-    color:chocolate;
+    color:black;
     font-weight: normal;
 }
 
@@ -492,5 +492,5 @@ img:hover{
 
 footer{
     padding: 2%;
-    background-color: burlywood;
+    background-color: #a8a800;
 }
