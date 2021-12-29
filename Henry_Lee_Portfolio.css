@@ -97,7 +97,7 @@ body.fade-out {
 
 .Video_Text{
     background: #a8a800;
-    color:w#00adad;
+    color:w#e4eeee;
     width: 100%;
     padding:17px;
     margin-top: 23%;
@@ -236,7 +236,7 @@ body.fade-out {
     padding-top:3%;
     height: 420px;
     background-color:#a8a800;
-    color:#00adad;
+    color:#dee9e9;
 }
 
 .Column_2{
@@ -372,13 +372,13 @@ input [type=submit]:hover {
  /* Makes contact form button slide in from right on page load */
 @keyframes movePopup {
   from {right: -40vw;}
-  to {bottom: 1.75vw;}
+  to {bottom: 1.25vw;}
 }
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .Pop_Up_Button {
-  bottom: 1.75vw;
-  right: 1.75vw;
+  bottom: 1.25vw;
+  right: 1.25vw;
   width: 25vw;  
   background-color: white;
   color: black;
@@ -476,7 +476,7 @@ center:hover{
 p:hover{
     color:black;
     transition:transform 1s;
-    transform: scale(1.09);
+    transform: scale(1.04);
 }
 
 h1:hover{
